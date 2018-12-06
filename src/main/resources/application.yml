@@ -1,0 +1,15 @@
+server:
+  port: 9081
+spring:
+  jpa:
+    properties:
+      dialect:  org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ms_attributes
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: pass4post
+    hikari:
+      maximum-pool-size: 2
